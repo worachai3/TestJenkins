@@ -6,7 +6,9 @@ pipeline {
     stages {
         stage('Run shell command') {
             steps {
+                sh 'cat test'
                 sh 'echo "hello, world! >> test"'
+                sh 'cat test'
             }
         }
  
