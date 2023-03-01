@@ -14,7 +14,7 @@ pipeline {
             steps {
                 sh 'git add test'
                 sh 'git commit -m "Update Refresh Token By Jenkins"'
-                sh 'git push origin master'
+                sh 'git push -f origin master'
             }
         }
     }
